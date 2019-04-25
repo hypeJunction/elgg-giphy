@@ -1,0 +1,29 @@
+.giphy-list {
+	margin: 1rem auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center
+}
+
+.giphy-list img {
+	height: 200px;
+	padding: 1rem;
+}
+
+[data-giphy-url] {
+	cursor: pointer;
+}
+
+.giphy-fieldset {
+	display: flex;
+	align-items: center;
+}
+
+.giphy-fieldset .elgg-field {
+	margin: 0;
+}
+
+.giphy-fieldset .elgg-field:first-child {
+	flex: 1;
+}

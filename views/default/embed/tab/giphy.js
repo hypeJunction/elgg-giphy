@@ -58,7 +58,10 @@ define(function (require) {
 			textArea.val(result);
 		}
 
-		lightbox.close();
-		popup.close();
+		if ($elem.closest('.embed-toolbar-popup').length) {
+			popup.close();
+		} else {
+			lightbox.close();
+		}
 	});
 });
